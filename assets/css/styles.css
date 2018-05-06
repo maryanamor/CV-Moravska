@@ -136,33 +136,6 @@ p {
   margin-bottom: 15px;
 }
 
-.sidebar-wrapper .degree {
-  font-size: 14px;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 15px;
-}
-
-.sidebar-wrapper .education-container .item:last-child {
-  margin-bottom: 0;
-}
-
-.sidebar-wrapper .education-container .meta {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-  margin-top: 0;
-}
-
-.sidebar-wrapper .education-container .time {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  margin-bottom: 0px;
-}
-
 .sidebar-wrapper .languages-container .lang-desc {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -203,6 +176,86 @@ p {
   background: #fff;
   padding: 60px;
   padding-right: 300px;
+}
+
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper .section-title .fas {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2d7788;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+
+.main-wrapper .section {
+  margin-bottom: 40px;
+}
+
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.main-wrapper .degree,
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+
+.main-wrapper .meta,
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+
+.main-wrapper .experiences-section .details ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 767px) {
