@@ -3,7 +3,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
-  background: #f5f5f5;
+  background: #545E6C;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +47,6 @@ p {
 }
 
 .wrapper {
-  background: #42A8C0;
   max-width: 960px;
   margin: 0 auto;
   position: relative;
@@ -57,9 +56,9 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #42A8C0;
+  background: #8c9da1;
   position: absolute;
-  right: 0;
+  left: 0;
   width: 250px;
   height: 100%;
   min-height: 1000px;
@@ -71,16 +70,14 @@ p {
 }
 
 .sidebar-wrapper .profile-container {
-  padding: 20px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
 }
 
 .profile-container .image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -91,13 +88,13 @@ p {
 }
 
 .sidebar-wrapper .name {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: 24px;
+  font-weight: 500;
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.sidebar-wrapper .tagline {
+.sidebar-wrapper .position {
   font-size: 16px;
   font-weight: 400;
   margin-top: 0;
@@ -175,14 +172,15 @@ p {
 .main-wrapper {
   background: #fff;
   padding: 60px;
-  padding-right: 300px;
+  padding-left: 300px;
+  border-radius: 45px;
 }
 
 .main-wrapper .section-title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #2d7788;
+  color: #2c3030;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -194,15 +192,10 @@ p {
   margin-right: 8px;
   display: inline-block;
   color: #fff;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2d7788;
+  background: #2c3030;
   text-align: center;
   padding-top: 8px;
   font-size: 16px;
