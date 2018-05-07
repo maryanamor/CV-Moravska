@@ -326,4 +326,13 @@ p {
     padding: 30px;
     border-radius: 0;
   }
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
+  }
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
+    padding-right: 0;
+  }
 }
