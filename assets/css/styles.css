@@ -3,11 +3,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
-  background: #545E6C;
+  background: #4e4e4e;
   font-size: 14px;
   padding: 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ul {
@@ -46,23 +50,34 @@ p {
   line-height: 1.5;
 }
 
+/* Colors */
+
+.gray {
+  color: #4e4e4e;
+}
+
+.dark-grey {
+  color: #6a7273;
+}
+
+.light-grey {
+  color: lightslategray;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-wrapper {
-  background: #8c9da1;
-  position: absolute;
   left: 0;
   width: 250px;
   height: 100%;
-  min-height: 1000px;
   color: #fff;
+  position: absolute;
+  min-height: 800px;
+  background: #6a7273;
 }
 
 .sidebar-wrapper a {
@@ -70,9 +85,10 @@ p {
 }
 
 .sidebar-wrapper .profile-container {
-  background: rgba(0, 0, 0, 0.2);
-  text-align: center;
   color: #fff;
+  text-align: center;
+  padding-bottom: 15px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .profile-container .image {
@@ -80,6 +96,7 @@ p {
   height: auto;
   margin: 0 auto;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .profile-container .image img {
@@ -102,19 +119,28 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.sidebar-wrapper .profile {
-  margin-bottom: 15px;
-}
-
 .sidebar-wrapper .contact-list .fas,
 .sidebar-wrapper .contact-list .fab {
-  margin-right: 5px;
-  font-size: 18px;
-  vertical-align: middle;
+  font-size: 26px;
+}
+
+.sidebar-wrapper .contact-list {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .sidebar-wrapper .contact-list li {
-  margin-bottom: 15px;
+  vertical-align: top;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.sidebar-wrapper .contact-list li:hover,
+.sidebar-wrapper .contact-list li:hover a {
+  color: #8e8e92;
 }
 
 .sidebar-wrapper .contact-list li:last-child {
@@ -125,7 +151,7 @@ p {
   padding: 20px;
 }
 
-.sidebar-wrapper .container-block-title {
+.sidebar-wrapper .title-item {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
@@ -149,15 +175,25 @@ p {
   margin-bottom: 0;
 }
 
-.sidebar-wrapper .interests-list {
+.sidebar-wrapper .hobby-list {
   margin-bottom: 0;
 }
 
-.sidebar-wrapper .interests-list li {
+.sidebar-wrapper .hobby-list li {
   margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 
-.sidebar-wrapper .interests-list li i {
+.sidebar-wrapper .hobby-list li:hover {
+  color: #8e8e92;
+  ;
+}
+
+.sidebar-wrapper .hobby-list li i {
   width: 20px;
   font-size: 18px;
   margin-right: 10px;
@@ -165,7 +201,7 @@ p {
   vertical-align: middle;
 }
 
-.sidebar-wrapper .interests-list li:last-child {
+.sidebar-wrapper .hobby-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -183,7 +219,6 @@ p {
   color: #2c3030;
   position: relative;
   margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .main-wrapper .section-title .fas {
@@ -211,6 +246,7 @@ p {
   position: relative;
   overflow: hidden;
   margin-bottom: 2px;
+  padding-right: 100px;
 }
 
 .main-wrapper .degree,
@@ -229,7 +265,6 @@ p {
   color: #97AAC3;
 }
 
-.main-wrapper .meta,
 .main-wrapper .company {
   margin-bottom: 10px;
   color: #97AAC3;
@@ -251,12 +286,49 @@ p {
   margin-bottom: 5px;
 }
 
+.skillset {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.skills-section .subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.skillset .list-inline-item {
+  color: lightslategray;
+  font-size: 40px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.skillset .list-inline-item:hover {
+  color: #3F4650;
+}
+
 @media (max-width: 767px) {
   .sidebar-wrapper {
     position: static;
     width: inherit;
+    margin-bottom: 20px;
   }
   .main-wrapper {
     padding: 30px;
+    border-radius: 0;
   }
 }
