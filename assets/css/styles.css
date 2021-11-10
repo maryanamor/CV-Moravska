@@ -64,10 +64,22 @@ p {
   color: lightslategray;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #6a7273;
+  padding: 0.5rem;
+  text-align: left;
+}
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .sidebar-wrapper {
@@ -84,6 +96,30 @@ p {
   color: #fff;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #bd5d38;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-item{
+  text-align: center;
+}
+.nav-item:hover{
+  text-decoration: underline;
+}
 .sidebar-wrapper .profile-container {
   color: #fff;
   text-align: center;
@@ -94,9 +130,8 @@ p {
 .profile-container .image {
   width: 100%;
   height: auto;
-  margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
 .profile-container .image img {
@@ -159,27 +194,23 @@ p {
   margin-bottom: 15px;
 }
 
-.sidebar-wrapper .languages-container .lang-desc {
-  color: rgba(255, 255, 255, 0.6);
+.languages-section ul {
+  list-style: disc inside;
 }
 
-.sidebar-wrapper .languages-list {
-  margin-bottom: 0;
-}
-
-.sidebar-wrapper .languages-list li {
+.languages-section ul li {
   margin-bottom: 10px;
 }
 
-.sidebar-wrapper .languages-list li:last-child {
+.languages-section ul li:last-child {
   margin-bottom: 0;
 }
 
-.sidebar-wrapper .hobby-list {
+.interests-section ul {
   margin-bottom: 0;
 }
 
-.sidebar-wrapper .hobby-list li {
+.interests-section ul li {
   margin-bottom: 10px;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -187,7 +218,7 @@ p {
   -o-transition: all 0.4s ease-in-out;
 }
 
-.sidebar-wrapper .hobby-list li i {
+.interests-section ul li i {
   width: 20px;
   font-size: 18px;
   margin-right: 10px;
@@ -195,14 +226,22 @@ p {
   vertical-align: middle;
 }
 
-.sidebar-wrapper .hobby-list li:last-child {
+.interests-section ul li:last-child {
   margin-bottom: 0;
+}
+.projects-section ul{
+  list-style: disc inside;
+}
+.projects-section ul li{
+ margin-bottom: 5px;
+}
+.projects-section ul li table{
+  width: 100%;
 }
 
 .main-wrapper {
   background: #fff;
-  padding: 60px;
-  padding-left: 300px;
+  padding: 60px 60px 60px 300px;
   border-radius: 45px;
 }
 
@@ -336,3 +375,13 @@ p {
     padding-right: 0;
   }
 }
+
+#scrollToTopBtn {
+  color: #D5D5D5;
+  cursor: pointer;
+  font-size: 28px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+}
+
